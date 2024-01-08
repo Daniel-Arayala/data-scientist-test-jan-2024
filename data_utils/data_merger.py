@@ -42,4 +42,3 @@ def merge_datasets(dataset1_path, dataset2_path, dest_path, file_name):
     output_path = os.path.join(dest_path, file_name)
     logger.info(f'Saving data to output path: {output_path}')
     gdf_merged.to_file(output_path, driver='GeoJSON')
-
